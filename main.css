@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html,
+body
+{
+    overflow: hidden;
+}
+
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.point
+{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+}
+.point:hover .text
+{
+    opacity: 1;
+}
+
+.point .label
+{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 100;
+    font-size: 16px;
+    cursor: help;
+}
+
+.point .text
+{
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    background: #00000077;
+    border: 1px solid #ffffff77;
+    color: #ffffff;
+    line-height: 1.3em;
+    font-family:'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    
+}
+
+label{
+    color: white;
+    font-size: 2rem;
+}
+
+.bouncing-dots {
+    position: absolute;
+    z-index:101;
+    left: 46.4%;
+    top: 50%;
+    /*margin: 50px;*/
+  }
+  
+  .bouncing-dots span {
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 1);
+    margin: 0 5px;
+    animation: jump 1s ease infinite;
+  }
+  
+  .bouncing-dots span:nth-of-type(2) {
+     animation-delay: 0.15s;
+  }
+  
+  .bouncing-dots span:nth-of-type(3) {
+     animation-delay: 0.3s;
+  }
+  
+  .bouncing-dots span:nth-of-type(4) {
+     animation-delay: 0.45s;
+  }
+  
+  @keyframes jump {
+    0%, 100% {transform: translateY(0)}
+    50% {transform: translateY(-15px)}
+  }
+  #overlay{
+    position:fixed;
+    z-index:100;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background:rgba(0,0,0,0.9);
+    transition: 1s 0.4s;
+  }
+  #progstat{
+    font-size:0.7em;
+    letter-spacing: 3px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+  }
+  
+
+/*# sourceMappingURL=main.css.map*/
