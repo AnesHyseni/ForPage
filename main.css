@@ -37,7 +37,7 @@ body
     left: -20px;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 40%;
     background: #00000077;
     border: 1px solid #ffffff77;
     color: #ffffff;
@@ -56,7 +56,7 @@ body
     left: -120px;
     width: 200px;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 15px;
     background: #00000077;
     border: 1px solid #ffffff77;
     color: #ffffff;
@@ -131,5 +131,102 @@ label{
     color:#fff;
   }
   
+  /*PopUp*/
+  .fabs {
+    position: fixed;
+    /*right: 20px;*/
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  .action {
+    background: rgb(0, 140, 255);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 7px 0px gray;
+    transition: background-color 0.4s ease-in-out;
+  }
+  
+  .action i {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .action:hover {
+    background-color: rgb(0, 204, 255);
+  }
+  
+  .btn {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+  
+  .btn i {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btns {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    transition: 0.3s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  .btns.open {
+    bottom: 50px;
+  }
+  /*PopUp*/
+  
+  
+  /*Alert*/
+  .alert {
+    padding: 20px;
+    background-color: #ffcfcc;
+    border: 1px solid #f44336;
+    border-left: 9px solid #f44336;
+    color: #f44336;
+    opacity: 0.83;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+  .alert.info {
+    border: 1px solid #7d7d81;
+    border-left: 9px solid #2e3031;
+    background-color: #3d3d3d;
+    color: #b2cee6;
+    
+}
+.closebtn.info {
+  padding-left: 15px;
+  color: #bad5eb;
+  font-weight: bold;
+  float: right;
+  line-height: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 45px;
+}
+.closebtn:hover {
+  transform: scale(1.3);
+}
 
 /*# sourceMappingURL=main.css.map*/
